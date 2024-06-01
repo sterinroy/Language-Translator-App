@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="black-circle"></div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            const container = document.querySelector('.container');
+            container.classList.add('explode');
+            setTimeout(function() {
+                window.location.href = "black.html";
+            }, 500);
+        }, 2000);
+    </script>
+</body>
+</html>
